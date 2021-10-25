@@ -1,0 +1,3 @@
+com\alura\appium\pageObjects\CadastroPageObject.class
+com\alura\appium\App.class
+com\alura\appium\AppiumDriverConfig.class
