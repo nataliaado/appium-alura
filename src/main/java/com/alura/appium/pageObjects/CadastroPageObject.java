@@ -30,9 +30,10 @@ public class CadastroPageObject {
         campoConfirmarSenha.setValue(confirmacao);
     }
 
-    public void cadastrar(String usuario, String senha, String confirmacao) {
+    public LoginPageObject cadastrar(String usuario, String senha, String confirmacao) {
         preencherFormulario(usuario, senha, confirmacao);
         botaoCadastrar.click();
+        return new LoginPageObject(driver);
     }
 
     public String mensagemErro() {
